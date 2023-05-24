@@ -56,12 +56,12 @@ func.print.lineage.tree <- function(conf_yaml_path,
         print(yaml_file)
         
     }
-    units_out <- 'cm'
+    units_out <- 'mm'
     if (a_4_output== TRUE) {
         print("output in A4 format")
         width <- 297
         height <- 210
-        units_out <-  "mm"
+        # units_out <-  "mm"
         man_multiply_second_legend_text <- 0.34
         man_multiply_first_legend_title_size <- 0.25
         
@@ -728,7 +728,7 @@ func.print.lineage.tree <- function(conf_yaml_path,
                 out_file_path <- yaml_file[['Individual general definitions']]$out_file$'replace name'$name
                 out_file_path<- paste0(path_base,out_file_path)
                 out_file_path <- paste0(out_file_path,out_index)
-                out_file_path <- paste(out_file_path,'.',file_type, sep = '')
+                #out_file_path <- paste(out_file_path,'.',file_type, sep = '')
             
             }
             
